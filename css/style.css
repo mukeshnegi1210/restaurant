@@ -1,0 +1,365 @@
+header .logo {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  display: inline-block;
+  max-width: 100%;
+  /* width: 300px; */
+}
+
+header .primary-menu li a {
+  padding: 28px 20px;
+  color: #1C1C1C;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+}
+
+header .btn-translate {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+header.fixed-header .logo {
+  max-width: 100px;
+}
+
+/* banner =========================== */
+#Banner {
+  margin-top: 80px;
+}
+
+#Banner .carousel-item {
+  position: relative;
+}
+
+.brand-logos-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.brand-logos-wrapper .brand-logos-list li+li {
+  margin-left: 30px;
+}
+
+
+#Banner .carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#Banner .carousel-item img {
+  height: 720px;
+  object-position: center;
+  object-fit: cover;
+}
+
+#Banner .carousel-item .item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 150px;
+  z-index: 2;
+
+}
+
+#Banner .carousel-item .item-content p {
+  padding-left: 25%;
+  font-weight: bold;
+}
+
+#Banner .carousel-control-prev,
+#Banner .carousel-control-next {
+  z-index: 3;
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  height: 75px;
+  width: 75px;
+  border: 2px solid #ffffff;
+}
+
+#Banner .carousel-control-prev:hover,
+#Banner .carousel-control-next:hover {
+  background-color: #87449a;
+  border: 2px solid #87449a;
+}
+
+
+/* menu section ================================== */
+.menu-section .container {
+  max-width: 1080px;
+}
+
+.menu-section {
+  background: url(../images/burgers/burgers-bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.menu-section.sandwiches-section {
+  background-image: url(../images/sandwich/sandwich-bg.png);
+}
+
+.menu-section .resturant-menu-wrapper .resturant-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 225px;
+  position: relative;
+}
+
+.menu-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "SANDWICHES";
+  background: url('../images/sandwich/tag-bg.png') no-repeat center top;
+  position: absolute;
+  top: 100%;
+  height: 228px;
+  width: 278px;
+  height: 228px;
+  right: 9%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 75px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Candal', sans-serif;
+  font-size: 35px;
+}
+
+.menu-section .resturant-menu-wrapper .resturant-menu li a {
+  padding: 25px 10px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu-section .menu-items-list {
+  margin-top: -00px;
+}
+
+.menu-section .menu-items-list .menu-item-box .item-info {
+  display: flex;
+  align-items: center;
+}
+
+.menu-section .menu-items-list .menu-item-box .item-info .item-name span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu-section .menu-items-list .menu-item-box .item-info .item-price {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: #D81405;
+  color: #ffffff;
+  height: 143px;
+  width: 143px;
+  text-align: center;
+  line-height: 143px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.menu-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
+  margin-top: -150px;
+}
+
+.menu-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "SANDWICHES";
+  background: url('../images/tag-red.png') no-repeat center top;
+  position: absolute;
+  top: 100%;
+  height: 228px;
+  width: 278px;
+  height: 228px;
+  right: 9%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 75px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Candal', sans-serif;
+  font-size: 35px;
+}
+
+/* menu chicken =============== */
+.menu-section.chicken-section {
+  background-image: url('../images/chicken/chiken-bg.png');
+}
+
+.menu-section.chicken-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "chicken";
+  background: url('../images/tag-yellow.png') no-repeat center top;
+  height: 286px;
+  right: auto;
+  left: 22%;
+  color: #D81405;
+}
+
+.menu-section.chicken-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
+  margin-top: 0;
+}
+
+.menu-section.chicken-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+  margin-top: -150px;
+}
+
+/* sides chicken =============== */
+.menu-section.sides-section {
+  background-image: url('../images/sides/sides-bg.png');
+}
+
+.menu-section.sides-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "Sides";
+}
+
+.menu-section.sides-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+  margin-top: 50px;
+
+}
+
+/* menues ===================== */
+.menu-section.menues-section {
+  background-image: url('../images/menus/menu-bg.png');
+}
+
+.menu-section.menues-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "Menues";
+  background: url('../images/tag-yellow.png') no-repeat center top;
+  height: 286px;
+  right: auto;
+  left: 22%;
+  color: #D81405;
+}
+
+
+.menu-section.menues-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
+  margin-top: 0;
+}
+
+.menu-section.menues-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+  margin-top: -200px;
+}
+
+/* drinks ============= */
+.menu-section.drinks-section {
+  background-image: url('../images/drinks/drinks-bg.png');
+}
+
+.menu-section.drinks-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
+  margin-top: 0;
+}
+
+.menu-section.drinks-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+  margin-top: -80px;
+}
+
+.menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-name span {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.menu-section .resturant-menu-wrapper .resturant-menu {
+  margin-bottom: 325px;
+}
+
+.menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-name em {
+  font-size: 20px;
+}
+
+.menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-price {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 20px;
+  flex: 0 0 55px;
+}
+
+.menu-section.drinks-section .resturant-menu-wrapper .resturant-menu::before {
+  content: "Drinks";
+  height: 286px;
+  left: 45%;
+}
+
+
+/* burgers ================= */
+.menu-section.burgers-section {
+  background-image: url(../images/burgers/burgers-bg.png);
+  padding-top: 50px;
+}
+
+.menu-section.burgers-section .resturant-menu-wrapper .resturant-menu::before {
+  content: none;
+
+}
+
+.menu-section.burgers-section .resturant-menu-wrapper .resturant-menu {
+  background:
+    linear-gradient(180deg, #FFFFFF 0%, rgba(231, 231, 231, 0) 100%);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.menu-section.burgers-section .resturant-menu-wrapper .resturant-menu li {
+  flex-grow: 1;
+  text-align: center;
+  border-image-slice: 1;
+  border-left: 1px solid;
+  border-image-source: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.menu-section.burgers-section .resturant-menu-wrapper .resturant-menu li:first-child {
+  border-left: 0;
+}
+.menu-section.burgers-section h2{
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.menu-section.burgers-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
+  margin-top: 0;
+}
+
+.menu-section.burgers-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+  margin-top: -100px;
+}
+
+#MapSection {
+  line-height: 0;
+}
+
+#ContactUs h2 {
+  font-size: 35px;
+}
+
+footer {
+  border-bottom: 20px solid rgba(87, 20, 15, 1);
+}
+
+footer .footer-links li a {
+  color: #AAAAAA;
+}
+
+footer .footer-links li a:hover {
+  color: #D81405;
+}
+
+footer .text-copyright {
+  color: rgba(240, 240, 240, 0.4);
+}
