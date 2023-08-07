@@ -1,16 +1,55 @@
-@media (max-width: 1199px) {
-  header .primary-menu li {
-    padding: 0 8px;
-  }
-}
+@media (max-width: 992px) {
 
-@media (max-width: 991px) {
-  header {
+  h1,
+  .h1 {
+    font-size: 50px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 40px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 30px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 25px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 22px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 16px;
+  }
+
+
+  header .header-inner {
     padding: 15px 0;
   }
+
+  header .logo {
+    top: -15px;
+  }
+
+  header+.banner {
+    margin-top: 55px;
+  }
+
+  .banner .carousel-item img {
+    height: 600px;
+  }
+
   .primary-menu-outer {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #F6D30F;
     top: 0;
     left: -100%;
     width: 100%;
@@ -19,74 +58,102 @@
     transition: all 300ms ease-in;
     visibility: hidden;
   }
+
   .primary-menu-outer.active {
     left: 0;
     visibility: visible;
   }
+
   .primary-menu-outer .menu-close {
     position: absolute;
-    left: 360px;
-    border: 1px solid #87449a;
-    color: #87449a;
+    right: 15px;
+    border: 1px solid #D81405;
+    color: #D81405;
     background-color: transparent;
     width: 30px;
     height: 30px;
     text-align: center;
-    line-height: 25px;
-    border-radius: 50%;
+    line-height: 30px;
+    border-radius: 5px;
     top: 10px;
   }
+
   .menu-open {
+    display: inline-block;
     margin-left: auto;
-    border: 1px solid #87449a;
-    color: #87449a;
+    border: 1px solid #D81405;
+    color: #D81405;
     background-color: transparent;
     width: 30px;
     height: 30px;
     text-align: center;
-    line-height: 25px;
-    border-radius: 50%;
+    line-height: 30px;
+
+    border-radius: 5px;
     top: 10px;
   }
+
   .primary-menu {
-    background-color: #ffffff;
-    max-width: 400px;
+    background-color: #F6D30F;
+    width: 100%;
     height: 100%;
+    flex-direction: column;
+    justify-content: center;
   }
-  #Gallery .gallery-content .gallery-body .single-gallery{
+
+  #Gallery .gallery-content .gallery-body .single-gallery {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
+  .menu-section.menues-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even),
+  .menu-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd),
+  .menu-section.chicken-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even),
+  .menu-section.burgers-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .menu-section .menu-items-list .menu-item-box .item-info {
+    justify-content: center !important;
+  }
+
+  .menu-section .menu-items-list .menu-item-box .item-img {
+    text-align: center;
+  }
+  .menu-section.drinks-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
+    margin-top: 90px;
+}
 }
 
 @media (max-width: 767px) {
-  body{
+  body {
     font-size: 14px;
     line-height: 20px;
   }
+
   h1,
   .h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h2,
   .h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   h3,
   .h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h4,
   .h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   h5,
   .h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   h6,
@@ -94,25 +161,84 @@
     font-size: 14px;
   }
 
-  .sub-title{
-    font-size: 16px;
+
+  .banner .carousel-item .item-content p {
+    padding: 0;
   }
 
-/* banner ======== */
-#Banner .carousel-control-prev, #Banner .carousel-control-next{
-  width: 40px;
-  height: 40px;
-}
-#BannerSlider .carousel-item img{
-  height: 400px;
-}
-.banner-content{
-  left: 50px;
-  max-width: calc(100% - 100px);
-  width: 100%;
-}
-  #Gallery .gallery-content .gallery-body .single-gallery{
-    flex: 0 0 100%;
-    max-width: 100%;
+  .banner .brand-logos-wrapper .brand-logos-list li img {
+    max-width: 75px;
+  }
+
+  .banner .brand-logos-wrapper .brand-logos-list li+li {
+    margin-left: 10px;
+  }
+
+  .banner .carousel-item img {
+    height: 550px;
+  }
+
+  .menu-section {
+    padding-top: 50px;
+  }
+
+  .menu-section h2 {
+    font-size: 35px !important;
+    margin-bottom: 40px;
+  }
+
+  .menu-section .resturant-menu-wrapper .resturant-menu {
+    background: none !important;
+  }
+
+  .menu-section .resturant-menu-wrapper .resturant-menu li {
+    border-left: 0 !important;
+    text-align: center;
+    color: #D81405;
+    line-height: 1.5;
+    font-size: 32px;
+    font-family: 'Candal', sans-serif;
+    flex-grow: 1;
+  }
+
+  .menu-section .resturant-menu-wrapper .resturant-menu {
+    margin-bottom: 75px !important;
+  }
+
+  .menu-section .resturant-menu-wrapper .resturant-menu::before {
+    content: none !important;
+  }
+
+  .menu-section .menu-items-list .menu-item-box .item-info .item-price {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    font-size: 25px;
+  }
+
+  .banner .carousel-item .item-content {
+    padding-top: 75px;
+  }
+
+  .menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-name span {
+    font-size: 20px;
+  }
+
+  .menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-name em {
+    font: 18px;
+  }
+
+  footer {
+    border-radius: 30px 30px 0px 0px;
+    margin-top: -30px;
+  }
+
+  footer .footer-brands li img {
+    max-width: 100px;
+  }
+
+  .footer-links li+li {
+    margin-top: 20px;
+
   }
 }
