@@ -39,7 +39,8 @@
     top: -15px;
   }
 
-  header+.banner {
+  header+section,
+  header+div {
     margin-top: 55px;
   }
 
@@ -120,12 +121,14 @@
   .menu-section .menu-items-list .menu-item-box .item-img {
     text-align: center;
   }
+
   .menu-section.drinks-section .menu-items-list .row .menu-item-box-wrapper:nth-child(even) {
     margin-top: 90px;
-}
+  }
 }
 
 @media (max-width: 767px) {
+
   body {
     font-size: 14px;
     line-height: 20px;
@@ -161,6 +164,9 @@
     font-size: 14px;
   }
 
+  header .logo {
+    max-width: 175px  ;
+  }
 
   .banner .carousel-item .item-content p {
     padding: 0;

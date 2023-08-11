@@ -4,7 +4,7 @@ header .logo {
   left: 0;
   display: inline-block;
   max-width: 100%;
-  /* width: 300px; */
+  max-width: 300px;
 }
 
 header .primary-menu li a {
@@ -26,7 +26,8 @@ header.fixed-header .logo {
 }
 
 /* banner =========================== */
-header+.banner {
+header+section,
+header+div {
   margin-top: 80px;
 }
 
@@ -72,22 +73,29 @@ header+.banner {
   width: 100%;
   padding-top: 150px;
   z-index: 2;
-
 }
+
 .banner.banner-2 .carousel-item .item-content {
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
-  padding-top:0;
+  padding-top: 0;
   transform: translateY(-50%);
   z-index: 2;
 
 }
 
+.banner .carousel-item .item-content h1,
+.banner .carousel-item .item-content h2 {
+  text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .banner .carousel-item .item-content p {
   padding-left: 25%;
   font-weight: bold;
+  text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25), 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px -2px 4px 0px rgba(0, 0, 0, 0.6);
+
 }
 
 .banner.banner-2 .carousel-item .item-content p {
@@ -123,6 +131,7 @@ header+.banner {
   background: url(../images/burgers/burgers-bg.png) no-repeat center;
   background-size: cover;
   padding-bottom: 50px;
+  padding-top: 75px;
 }
 
 .menu-section.sandwiches-section {
