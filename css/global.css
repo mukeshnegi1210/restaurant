@@ -1,10 +1,9 @@
 /*==================== fonts ======================= */
 
 /*------------ google fonts --------- */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Roboto+Slab:wght@300;500;600;700&family=Roboto:wght@500&display=swap');
-/* global css ==================  */
 
-/* =============== General Styling =============  */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Candal&family=Paytone+One&family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 
 html {
   scroll-behavior: smooth;
@@ -67,12 +66,12 @@ h6,
 .h6 {
   font-family: 'Candal', sans-serif;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h1,
 .h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 
 h2,
@@ -118,6 +117,10 @@ h6,
 
 .font-bebas {
   font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-paytone {
+  font-family: 'Paytone One', sans-serif;
 }
 
 /* text colors=== */
@@ -193,7 +196,7 @@ h6,
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 15px;
 }
 

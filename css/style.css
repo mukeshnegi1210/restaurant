@@ -35,6 +35,10 @@ header+div {
   position: relative;
 }
 
+.banner .carousel-item .container {
+  padding: 0 25px;
+}
+
 .banner .brand-logos-wrapper {
   position: absolute;
   top: 0;
@@ -55,23 +59,22 @@ header+div {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
 .banner .carousel-item img {
-  height: 720px;
+  height: 725px;
   object-position: center;
   object-fit: cover;
 }
-
 
 .banner .carousel-item .item-content {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 150px;
+  padding-top: 200px;
   z-index: 2;
 }
 
@@ -88,20 +91,26 @@ header+div {
 
 .banner .carousel-item .item-content h1,
 .banner .carousel-item .item-content h2 {
-  text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5),
+    0 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.banner .carousel-item .item-content p {
-  padding-left: 25%;
+.banner .carousel-item .item-content h2{
   font-weight: bold;
-  text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25), 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px -2px 4px 0px rgba(0, 0, 0, 0.6);
-
+}
+.banner .carousel-item .item-content p {
+  padding-left: 20%;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 2px 2px rgba(0, 0, 0, 0.5),
+    0 -2px 4px rgba(0, 0, 0, 0.6);
+  line-height: 1.4;
 }
 
 .banner.banner-2 .carousel-item .item-content p {
   padding-left: 0;
   padding-right: 15%;
 }
+
 
 .banner .carousel-control-prev,
 .banner .carousel-control-next {
@@ -110,18 +119,27 @@ header+div {
   top: 50%;
   transform: translateY(-50%);
   bottom: auto;
-  height: 75px;
-  width: 75px;
-  border: 2px solid #ffffff;
+  height: 50px;
+  width: 50px;
+
 }
 
 .banner .carousel-control-prev:hover,
 .banner .carousel-control-next:hover {
-  background-color: #87449a;
-  border: 2px solid #87449a;
+  color: #D81405;
+
+}
+
+.banner .carousel-indicators li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 
+.banner h1 .big{
+  font-size: 72px;
+}
 /* menu section ================================== */
 .menu-section .container {
   max-width: 1080px;
@@ -181,15 +199,30 @@ header+div {
   align-items: center;
 }
 
+.menu-section .menu-items-list .menu-item-box .item-info .item-name {
+  line-height: 1;
+  font-size: 45px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .menu-section .menu-items-list .menu-item-box .item-info .item-name span {
-  display: block;
+
   margin-bottom: 10px;
+}
+
+.menu-section .menu-items-list .menu-item-box .item-info .item-name em {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+
+
 }
 
 .menu-section .menu-items-list .menu-item-box .item-info .item-price {
   font-family: 'Bebas Neue', sans-serif;
   background-color: #D81405;
   color: #ffffff;
+  flex:  0 0 143px;
   height: 143px;
   width: 143px;
   text-align: center;
@@ -198,7 +231,7 @@ header+div {
   margin-left: 10px;
   border-radius: 50%;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
+  font-size: 65px;
 }
 
 .menu-section .menu-items-list .row .menu-item-box-wrapper:nth-child(odd) {
@@ -371,9 +404,7 @@ header+div {
   line-height: 0;
 }
 
-#ContactUs h2 {
-  font-size: 35px;
-}
+
 
 footer {
   border-bottom: 20px solid rgba(87, 20, 15, 1);
