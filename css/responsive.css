@@ -41,7 +41,7 @@
 
   header+section,
   header+div {
-    margin-top: 55px;
+    margin-top: 60px;
   }
 
   .banner .carousel-item img {
@@ -200,7 +200,7 @@
   }
 
   .banner .carousel-item img {
-    height: 640px;
+    height: 700px;
   }
 
   .menu-section {
@@ -308,6 +308,10 @@
 
   .menu-section .menu-items-list .menu-item-box .item-info .item-name {
     font-size: 28px;
+  }
+
+  #MapSection {
+    padding-top: 0px;
   }
 
 }
