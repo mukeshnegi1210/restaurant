@@ -78,7 +78,7 @@ header+div {
   z-index: 2;
 }
 
-.banner .carousel-item.with-burger .item-content{
+.banner .carousel-item.with-burger .item-content {
   padding-top: 300px;
 }
 
@@ -98,16 +98,19 @@ header+div {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5),
     0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.banner .carousel-item .item-content h2{
+
+.banner .carousel-item .item-content h2 {
   font-weight: bold;
 }
+
 .banner .carousel-item .item-content p {
   padding-left: 20%;
   font-weight: bold;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25),
     0 2px 2px rgba(0, 0, 0, 0.5),
     0 -2px 4px rgba(0, 0, 0, 0.6);
-  line-height: 1.2;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 .banner.banner-2 .carousel-item .item-content p {
@@ -141,9 +144,10 @@ header+div {
 }
 
 
-.banner h1 .big{
+.banner h1 .big {
   font-size: 72px;
 }
+
 /* menu section ================================== */
 .menu-section .container {
   max-width: 1080px;
@@ -226,7 +230,7 @@ header+div {
   font-family: 'Bebas Neue', sans-serif;
   background-color: #D81405;
   color: #ffffff;
-  flex:  0 0 143px;
+  flex: 0 0 143px;
   height: 143px;
   width: 143px;
   text-align: center;
@@ -364,7 +368,7 @@ header+div {
 /* burgers ================= */
 .menu-section.burgers-section {
   background-image: url(../images/burgers/burgers-bg.png);
- 
+
 }
 
 .menu-section.burgers-section .resturant-menu-wrapper .resturant-menu::before {

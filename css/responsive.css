@@ -129,7 +129,8 @@
   .banner .carousel-item .item-content {
     padding-top: 150px;
   }
-  .banner .carousel-item.with-burger .item-content{
+
+  .banner .carousel-item.with-burger .item-content {
     padding-top: 150px;
   }
 }
@@ -178,12 +179,16 @@
   header .logo {
     max-width: 175px;
   }
-  header.fixed-header .logo{
+
+  header.fixed-header .logo {
     max-width: 50px;
   }
 
   .banner .carousel-item .item-content p {
     padding: 0;
+    font-size: 15px;
+    line-height: 22px;
+
   }
 
   .banner .brand-logos-wrapper .brand-logos-list li img {
@@ -241,9 +246,10 @@
     padding-top: 75px;
   }
 
-  .banner .carousel-item.with-burger .item-content{
+  .banner .carousel-item.with-burger .item-content {
     padding-top: 75px;
   }
+
   .menu-section.drinks-section .menu-items-list .menu-item-box .item-info .item-name span {
     font-size: 20px;
   }
@@ -295,11 +301,13 @@
   .banner.banner-2 .carousel-item .item-content p {
     font-weight: normal;
   }
-  .banner.banner-2 .carousel-item .item-content p{
+
+  .banner.banner-2 .carousel-item .item-content p {
     padding: 0;
   }
-  .menu-section .menu-items-list .menu-item-box .item-info .item-name{
+
+  .menu-section .menu-items-list .menu-item-box .item-info .item-name {
     font-size: 28px;
   }
-  
+
 }
